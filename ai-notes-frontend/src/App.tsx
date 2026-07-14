@@ -159,7 +159,7 @@ function App() {
             component="div"
             sx={{ flexGrow: 1, fontWeight: 600 }}
           >
-            AI Ready Notes
+            AI Notes
           </Typography>
           <Button
             color="inherit"
@@ -345,12 +345,6 @@ function App() {
                     Created:{" "}
                     {new Date(selectedNote.createdAt).toLocaleString()}
                   </Typography>
-                  <Typography
-                    variant="caption"
-                    sx={{ color: "rgba(148,163,184,0.9)" }}
-                  >
-                    Local only · Backend & AI coming soon
-                  </Typography>
                 </Box>
               </Box>
             ) : (
@@ -373,14 +367,13 @@ function App() {
                     mb: 0.5,
                   }}
                 >
-                  Welcome to AI Ready Notes
+                  Welcome to AI Notes
                 </Typography>
                 <Typography
                   color="text.secondary"
                   align="center"
                 >
                   Start by creating a new note or selecting an existing one.
-                  Everything is saved locally on your device.
                 </Typography>
               </Box>
             )}
